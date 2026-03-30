@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/faktum?stringtype=unspecified
-    username: faktum
-    password: REDACTED
+    username: ${DB_USERNAME:faktum}
+    password: ${DB_PASSWORD:}
     driver-class-name: org.postgresql.Driver
 
   data:
@@ -23,7 +23,7 @@ logging:
 
 meilisearch:
   enabled: true
-  api-key: REDACTED
+  api-key: ${MEILISEARCH_API_KEY:}
 
 spring.security.oauth2.resourceserver.jwt:
   issuer-uri: https://sso.axitam.net/application/o/faktum/
