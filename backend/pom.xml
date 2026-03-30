@@ -91,6 +91,13 @@
             <version>3.7.3</version>
         </dependency>
 
+        <!-- Dotenv support -->
+        <dependency>
+            <groupId>me.paulschwarz</groupId>
+            <artifactId>spring-dotenv</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
         <!-- Security / OAuth2 Resource Server -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
